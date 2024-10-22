@@ -17,7 +17,15 @@ export const Container = styled.div`
 
     img {
         width: 25%;
+
+        @media (max-width: 500px) {
+        width: 40%;
+      }
     }
+
+    @media (max-width: 500px) {
+        padding: 5px 25px;
+      }
 `
 
 export const Menu = styled.ul`
@@ -33,6 +41,10 @@ export const Li = styled.li`
     cursor: pointer;
     font-size: 28px;
     position: relative;
+
+    @media (max-width: 500px) {
+        font-size: 22px;
+      }
 
     a{
         color: #ffffff;

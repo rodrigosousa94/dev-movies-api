@@ -8,17 +8,23 @@ export const Title = styled.h4`
 
 `
 
+
 export const Container = styled.div`
 
     display: flex;
     margin-top: 30px;
     gap: 10px;
 
-    div{
+    @media (max-width: 1020px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
 
+
+
+    div{
         display: flex;
         flex-direction: column;
-
     }
 
     p{
@@ -26,7 +32,7 @@ export const Container = styled.div`
     }
 
     img{
-        height: 200px;
+        width: 100px;
     }
 
 `

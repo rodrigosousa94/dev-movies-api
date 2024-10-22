@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Background, Info, Poster,Container, ContainerButton } from "./styles";
 import Button from '../../components/Button'
 import Slider from "../../components/Slider";
+import SliderPeople from "../../components/SliderPeople";
 import getImages from '../../utils/getImages'
 import Modal from "../../components/Modal";
 import { getMovies, getTopMovies, getTopSeries, getPopularSeries, getTopPeoples } from "../../services/getData";
@@ -52,7 +53,7 @@ function Home() {
               <h1>{movie.title}</h1>
               <p>{movie.overview}</p>
               <ContainerButton>
-                <Button onClick={() => navigate(`/detalhe/${movie.id}`)} red={true}>Assista Agora</Button>
+                <Button onClick={() => navigate(`/detalhe/${movie.id}`)} red={true}>Detalhes do Filme</Button>
                 <Button onClick={() => setShowModal(true)} red={false}>Assista ao Trailer</Button>
               </ContainerButton>
             </Info>
@@ -68,7 +69,7 @@ function Home() {
       { topMovies && <Slider info={topMovies} title={"Top Filmes"}/> }
       { topSeries && <Slider info={topSeries} title={"Top Series"} /> }
       { popularSeries && <Slider info={popularSeries} title={"Séries Mais Populares"} /> }
-      { topPeoples && <Slider info={topPeoples} title={"Artitas Mais Populares"} /> }
+      { topPeoples && <SliderPeople people={topPeoples} title={"Artitas Mais Populares"} /> }
     </>
   );
 }

@@ -14,17 +14,15 @@ export const Container = styled.div`
         height: 100%;
 
         @media (max-width: 500px) {
-        width: 200px;
+            width: 200px;
       }
     }
-
- 
 
     h3{
         color: #ffffff;
         margin-top: 15px;
 
-        @media (max-width: 1020px) {
+        @media (max-width: 500px) {
             font-size: 16px;
       }
     }

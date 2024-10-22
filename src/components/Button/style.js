@@ -16,6 +16,17 @@ const buttonStyles = css`
         color: #ff0000;
     }
 
+    @media (max-width: 500px) {
+        padding: 10px 10px;
+        font-size: 13px;
+      }
+
+      @media (max-width: 320px) {
+        padding: 10px 10px;
+        font-size: 10px;
+      }
+
+
 `
 
 

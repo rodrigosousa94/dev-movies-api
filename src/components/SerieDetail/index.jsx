@@ -70,7 +70,7 @@ function SerieDetail() {
               </div>
             ))}
           </ContainerMovies>
-          <Slider info={serieSimilar} title="Filmes Similares"/>
+          <Slider info={serieSimilar} title="Series Similares"/>
         </>
       )}
     </>

@@ -27,6 +27,10 @@ export const Container = styled.div`
     padding: 50px;
     max-width: 1200px;
 
+    @media (max-width: 1020px) {
+        width: 100%;
+      }
+
     span{
         font-size: 20px;
         color: #fff;

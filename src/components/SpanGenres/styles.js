@@ -7,6 +7,13 @@ export const Container = styled.div`
     margin-top: 30px;
     gap: 10px;
 
+    @media (max-width: 1020px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+      }
+
+
     span{
         padding: 10px 18px;
         border: 2px solid #fff;
@@ -18,6 +25,11 @@ export const Container = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media (max-width: 500px) {
+            padding: 4px 15px;
+            font-size: 12px;
+      }
     }
 
 `

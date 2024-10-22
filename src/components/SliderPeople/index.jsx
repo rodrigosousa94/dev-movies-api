@@ -1,17 +1,17 @@
 import { Container } from "./style";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Card from "../Card";
+import CardPeople from "../CardPeople";
 
 
 
 
-function Slider( { info, title } ) {
+function SliderPeople( { people, title } ) {
   
   return (
     <Container>
       <h2>{title}</h2>
       <Swiper
-        grabCursor={false}
+        grabCursor={true}
         spaceBetween={10}
         slidesPerView={'auto'}
         className="swiper"
@@ -19,9 +19,9 @@ function Slider( { info, title } ) {
 
 
         {
-          info.map((item, index) => (
+          people.map((item, index) => (
             <SwiperSlide key={index}>
-              <Card item={item}/>
+              <CardPeople item={item}/>
             </SwiperSlide>
           ))
         }
@@ -30,4 +30,4 @@ function Slider( { info, title } ) {
   );
 }
 
-export default Slider;
+export default SliderPeople;
