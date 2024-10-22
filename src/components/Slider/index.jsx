@@ -15,6 +15,7 @@ function Slider( { info, title } ) {
         spaceBetween={10}
         slidesPerView={'auto'}
         className="swiper"
+        style={{ overflow: 'hidden' }}
       >
 
 

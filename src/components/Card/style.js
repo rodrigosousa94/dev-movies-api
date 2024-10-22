@@ -13,8 +13,9 @@ export const Container = styled.div`
         width: 300px;
         height: 100%;
 
+
         @media (max-width: 500px) {
-        width: 200px;
+          width: 200px;
       }
     }
 

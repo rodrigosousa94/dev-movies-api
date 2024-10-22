@@ -124,19 +124,16 @@ export const Poster = styled.div`
             width: 300px;
             margin-top: 80px;
             margin-bottom: -200px;
+        }
 
         @media (max-width: 500px) {
             width: 200px;
             margin-bottom: -180px;
+        }
         
         @media (max-width: 320px) {
             display: none;
       }
-
-
-      }
-      }
-        
     }
 
 `
