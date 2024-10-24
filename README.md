@@ -1,90 +1,122 @@
-🎬 MovieApp
-MovieApp é um projeto front-end desenvolvido com React e Vite que consome a API do The Movie Database (TMDB) para exibir informações sobre filmes populares, incluindo detalhes individuais de cada filme. A aplicação conta com uma interface moderna e responsiva, permitindo aos usuários explorar filmes de forma fácil e intuitiva.
+<h1 align="center"> 
+	  🚀✅ DevMovies - Concluído ✅🚀
+</h1>
 
-🖥️ Demonstração
+<!-- ---------------------------------------------------------------------- -->
 
-Link para a demonstração
+<!-- MODELO MENU DE NAVEGAÇÃO -->
+<p align="center">
+ <a href="#-sobre-o-projeto">Sobre</a> •
+ <a href="#-funcionalidades">Funcionalidades</a> •
+ <a href="#-layout">Layout</a> • 
+ <a href="#-como-executar-o-projeto">Como executar</a> • 
+ <a href="#-tecnologias">Tecnologias</a> • 
+ <a href="#-autor">Autor</a> • 
+ <a href="#user-content--licença">Licença</a>
+</p>
 
-📚 Tecnologias Utilizadas
-Vite: Ferramenta de build rápida e moderna para projetos front-end.
-React: Biblioteca JavaScript para construção de interfaces de usuário.
-TypeScript (opcional): Para maior segurança no desenvolvimento.
-TMDB API: API usada para buscar informações sobre filmes.
-CSS Frameworks: TailwindCSS ou Bootstrap para estilização rápida (se aplicável).
-React Router: Para navegação entre páginas.
+<!-- ---------------------------------------------------------------------- -->
 
-🚀 Funcionalidades
 
-Exibir um slider com filmes populares.
-Visualizar detalhes de cada filme ao clicar no cartão do filme.
-Paginação para navegar entre listas de filmes.
-Sistema de busca para encontrar filmes específicos.
-Responsivo para desktop e dispositivos móveis.
+<!-- ---------------------------------------------------------------------- -->
 
-📦 Pré-requisitos
-Certifique-se de ter as seguintes ferramentas instaladas:
+<!-- MODELO DESCRIÇÃO SOBRE O PROJETO: -->
+## 💻 Sobre o projeto
 
-Node.js (versão 14 ou superior)
-npm ou yarn
-⚙️ Instalação
-Siga os passos abaixo para rodar o projeto localmente:
+<!-- EXPLICA O MOTIVO DO PROJETO -->
+DevMovies - um projeto front-end de filmes utilizando a API TMDB, com o objetivo de exibir listas e detalhes específicos de filmes. Usei React e utilizei React Hooks, como useEffect para gerenciar chamadas assíncronas, useState para controlar o estado e useParams para lidar com parâmetros dinâmicos de rota. Optei pelo Styled Components para uma estilização modular, e o Axios facilitou as requisições HTTP. Também integrei o SwiperJS para criar sliders dinâmicos de filmes e implementei o React Router para navegar até páginas de detalhes ao clicar nos filmes nos sliders. Além disso, como parte do desafio do curso, fui responsável por desenvolver a responsividade do projeto, no qual obtive êxito. Todo o projeto foi realizado através de um curso no DevClub.
 
-Clone o repositório:
+<!-- LINHA DE DIVISÃO: -->
+---
 
-bash
-Copiar código
-git clone https://github.com/seu-usuario/movieapp.git
-cd movieapp
-Instale as dependências:
+<!-- ---------------------------------------------------------------------- -->
 
-bash
-Copiar código
-npm install
-# ou
-yarn install
-Crie um arquivo .env na raiz do projeto e adicione sua chave da API do TMDB:
+<!-- MODELO FUNCIONALIDADES: -->
+## ⚙️ Funcionalidades
 
-bash
-Copiar código
-VITE_TMDB_API_KEY=SUA_API_KEY
-Inicie o servidor de desenvolvimento:
+<!-- EXEMPLO DE FUNCIONALIDADES: -->
+- [x] Exibe uma lista dos melhores filmes.
+- [x] Mostra as melhores séries do momento.
+- [x] Apresenta os artistas mais famosos da atualidade.
+- [x] Ao clicar em um filme ou série, o usuário é redirecionado para a página de detalhes específica daquele filme.
 
-bash
-Copiar código
-npm run dev
-# ou
-yarn dev
-Acesse a aplicação no seu navegador através do endereço:
+---
 
-arduino
-Copiar código
-http://localhost:5173
-📂 Estrutura de Pastas
-bash
-Copiar código
-src/
-├── assets/            # Imagens, ícones, etc.
-├── components/        # Componentes reutilizáveis do React
-├── pages/             # Páginas principais da aplicação
-├── services/          # Configuração e integração da API
-├── styles/            # Estilos globais e específicos
-├── App.tsx            # Componente principal da aplicação
-└── main.tsx           # Ponto de entrada da aplicação
+<!-- ---------------------------------------------------------------------- -->
 
-📝 Como Usar
-Navegue pelos filmes no slider inicial.
-Clique em um filme para ver os detalhes completos.
-Use a barra de busca para procurar filmes específicos.
+<!-- EXEMPLO DE LAYOUT: -->
+## 🎨 Layout
+![Web1](https://github.com/rodrigosousa94/dev-movies-api/blob/main/_assets/main.png)
+![Web1](https://github.com/rodrigosousa94/dev-movies-api/blob/main/_assets/cards.png)
+![Web1](https://github.com/rodrigosousa94/dev-movies-api/blob/main/_assets/detalhes.png)
 
-🛠️ Próximos Passos
-Implementar sistema de favoritos para salvar filmes preferidos.
-Adicionar um sistema de login e autenticação.
-Criar página de perfil de usuário.
-Melhorar a acessibilidade da aplicação.
-Implementar testes unitários com Jest.
+---
 
-🤝 Contribuição
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+<!-- ---------------------------------------------------------------------- -->
 
-📝 Licença
-Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais informações.
+<!-- MODELO DE COMO EXECUTAR O PROJETO -->
+## 🚀 Como executar o projeto
+
+1 - Baixar o Projeto <br>
+2 - Instalar a pasta node_modules (npm install)<br>
+3 - Rodar o projeto (npm run dev)
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- MODELO DE PRÉ REQUISITOS -->
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+---
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- MODELO DE TECNOLOGIAS -->
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+#### **Front-End**  ([ReactJS](https://reactjs.org/)) 
+
+-   **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
+-   **[Styled-Component](https://styled-components.com/docs)**
+
+---
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- MODELO DE COMO CONTRIBUIR PARA O PROJETO -->
+## 💪 Como contribuir para o projeto
+
+1. Faça um **fork** do projeto.
+2. Crie uma nova branch com as suas alterações: `git checkout -b my-feature`
+3. Salve as alterações e crie uma mensagem de commit contando o que você fez: `git commit -m "feature: My new feature"`
+4. Envie as suas alterações: `git push origin my-feature`
+> Caso tenha alguma dúvida confira este [guia de como contribuir no GitHub](./CONTRIBUTING.md)
+
+---
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- MODELO DE AUTOR-->
+## 🦸 Autor
+
+<a href="https://www.linkedin.com/in/s-rodrigo/">
+Rodrigo de Oliveira Sousa</a>
+ <br />
+ 
+[![Gmail Badge](https://img.shields.io/badge/-r.oliveira5117@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:r.oliveira5117@gmail.com)](mailto:r.oliveira5117@gmail.com)
+
+---
+
+<!-- ---------------------------------------------------------------------- -->
+
+<!-- MODELO DE LICENÇA -->
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+
+Feito por Rodrigo de Oliveira Sousa👋🏽 [Entre em contato!](https://www.linkedin.com/in/s-rodrigo/)
